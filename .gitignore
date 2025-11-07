@@ -1,0 +1,66 @@
+# ------------------
+# 🐍 Python / Flask
+# ------------------
+venv/
+.venv/
+ENV/
+env/
+instance/
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Cache e testes
+.mypy_cache/
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Arquivos de Configuração Local/Secreta
+.env
+.env.*
+.flaskenv
+
+# ------------------
+# ⚛️ React / Front-end
+# ------------------
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+.pnpm/
+dist/
+
+# Cache e temporários
+.eslintcache
+.stylelintcache
+.cache/
+*.cache/
+
+# ------------------
+# 🧠 IDEs e Editores
+# ------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------
+# 💻 Sistema Operacional
+# ------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# ------------------
+# 📦 Outros opcionais (segurança extra)
+# ------------------
+# Arquivos temporários do Node ou Python
+*.tmp
+*.bak
