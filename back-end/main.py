@@ -4,15 +4,6 @@ from flask_cors import CORS # Importar CORS para desenvolvimento local
 app = Flask(__name__, static_folder="../front-end/build", static_url_path="/")
 
 CORS(app)
-
-# Rota da API
-@app.route("/api/usuarios")
-def get_usuarios():
-    return jsonify([
-        {"id": 1, "nome": "Felipe"},
-        {"id": 2, "nome": "Wroblewski"}
-    ])
-
 @app.route("/")
 def serve_react():
     return send_from_directory(app.static_folder, "index.html")

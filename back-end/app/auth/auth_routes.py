@@ -4,7 +4,7 @@ from app.forms import LoginForm
 from app.models import User 
 
 # 1. Cria o Blueprint (o contêiner para as rotas de auth)
-auth_bp = Blueprint('auth', __name__, url_prefix='/', template_folder='templates')
+auth_bp = Blueprint('auth', __name__, url_prefix='/')
 
 
 @auth_bp.route('/', methods=['GET', 'POST'])

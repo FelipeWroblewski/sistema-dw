@@ -36,6 +36,8 @@ from app.createTable.createTable_routes import createTableBp
 
 UPLOAD_FOLDER = os.path.join(os.path.dirname(__file__), 'static', 'uploads')
 
+
+
 @app.after_request
 def add_header(response):
     response.cache_control.no_store = True
