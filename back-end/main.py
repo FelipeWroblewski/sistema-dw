@@ -1,9 +1,15 @@
-from flask import Flask, jsonify, send_from_directory
-from flask_cors import CORS # Importar CORS para desenvolvimento local
+from flask import Flask, send_from_directory
+from flask_cors import CORS
+from app import create_app, socketio  # importa da tua factory
+from app.auth.auth_routes import auth_bp
 
-app = Flask(__name__, static_folder="../front-end/build", static_url_path="/")
+# Cria a instância do app via factory
+app = create_app()
 
+# Permitir requisições do React
 CORS(app)
+
+# Servir o build do React
 @app.route("/")
 def serve_react():
     return send_from_directory(app.static_folder, "index.html")
@@ -13,4 +19,5 @@ def not_found(e):
     return send_from_directory(app.static_folder, "index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Usa socketio.run se você estiver usando SocketIO
+    socketio.run(app, debug=True, host="0.0.0.0", port=5000)
