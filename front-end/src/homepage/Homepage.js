@@ -1,16 +1,20 @@
 import CardsHomepage from './components/CardsHomepage';
+import NavBar from '../navBar/NavBar';
 
 function Homepage() {
     return (
-        <div className='flex flex-col items-center w-full min-h-screen bg-gray-100 pt-16 overflow-x-hidden dark:bg-[#1a1a1a]'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 w-10/12'>
-                <CardsHomepage/>
-                <CardsHomepage/>
-                <CardsHomepage/>
-                <CardsHomepage/>
+        <>
+            <NavBar />
+            <div className='flex flex-col items-center w-full min-h-screen bg-gray-100 overflow-x-hidden '>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-32 gap-6 w-10/12'>
+                    <CardsHomepage conteudo="18" descricao="Esquemas"/>
+                    <CardsHomepage conteudo="945" descricao="Tabelas"/>
+                    <CardsHomepage conteudo="67" descricao="Dags"/>
+                    <CardsHomepage conteudo="11/11/2025 16:27:30" descricao="Última Atualização"/>
+                </div>
             </div>
-        </div>
-    )
+        </>
+    );
 }
 
 export default Homepage;
