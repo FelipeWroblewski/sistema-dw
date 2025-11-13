@@ -2,6 +2,7 @@ import CardsHomepage from './components/CardsHomepage';
 import NavBar from '../navBar/NavBar';
 import UltimasAtualizacoes from './components/UltimasAtualizacoes';
 import Grafico from './components/Grafico';
+import HomeFooter from './components/HomeFooter';
 
 function Homepage() {
     return (
@@ -16,6 +17,7 @@ function Homepage() {
                 </div>
                 <Grafico />
                 <UltimasAtualizacoes />
+                <HomeFooter />
             </div>
         </>
     );

@@ -6,13 +6,13 @@ function UltimasAtualizacoes() {
             <ul className="divide-y divide-gray-500 dark:divide-[#E3CFAA]">
                 {/* for log in  logs_atualizacao */}
                 <li className="py-3 flex justify-between items-center">
-                    <span class="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong class="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
-                    <span class="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong class="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
                 </li>
                 {/* endfor */}
             </ul>
             {/* else */}
-            <p class="text-gray-500">Nenhuma atualização recente encontrada.</p>
+            <p className="text-gray-500">Nenhuma atualização recente encontrada.</p>
             {/* endif */}
         </div>
     )
