@@ -1,6 +1,7 @@
 import CardsHomepage from './components/CardsHomepage';
 import NavBar from '../navBar/NavBar';
 import UltimasAtualizacoes from './components/UltimasAtualizacoes';
+import Grafico from './components/Grafico';
 
 function Homepage() {
     return (
@@ -13,6 +14,7 @@ function Homepage() {
                     <CardsHomepage conteudo="67" descricao="Dags"/>
                     <CardsHomepage conteudo="11/11/2025 16:27:30" descricao="Última Atualização"/>
                 </div>
+                <Grafico />
                 <UltimasAtualizacoes />
             </div>
         </>
