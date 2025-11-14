@@ -1,4 +1,4 @@
-function UltimasAtualizacoes() {
+function LastUpdates() {
     return (
         <div className="w-10/12 mt-6 bg-white rounded-2xl shadow p-6 dark:bg-[#22211D]">
             <h2 className="text-xl font-bold text-gray-700 mb-4 dark:text-[#E3CFAA]">Últimas Atualizações</h2>
@@ -18,4 +18,4 @@ function UltimasAtualizacoes() {
     )
 }
 
-export default UltimasAtualizacoes;
+export default LastUpdates;

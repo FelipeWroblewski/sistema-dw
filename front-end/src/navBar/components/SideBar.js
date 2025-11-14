@@ -65,18 +65,18 @@ function SideBar({ isOpen }) {
             <ul className="list-none mt-5 p-0 pl-6 relative overflow-y-auto scrollbar-hide
               before:content-[''] before:absolute before:left-3 before:top-0 before:bottom-0 
               before:w-[2px] before:bg-brancoPrincipal dark:before:bg-[#22211D] before:rounded-[5px]">
-              <Itens nameItem="Api" />
-              <Itens nameItem="Comercial" />
-              <Itens nameItem="Estoque" />
-              <Itens nameItem="Eventos" />
-              <Itens nameItem="Live" />
-              <Itens nameItem="Marft" />
-              <Itens nameItem="Ppcp" />
-              <Itens nameItem="Rh" />
-              <Itens nameItem="Rh_sci" />
-              <Itens nameItem="Suprimentos" />
-              <Itens nameItem="Sustentabilidade" />
-              <Itens className="last:mb-24" nameItem="Ti" />
+              <Itens nameItem="Api" esquema="Api"/>
+              <Itens nameItem="Comercial" esquema="Comercial"/>
+              <Itens nameItem="Estoque" esquema="Estoque"/>
+              <Itens nameItem="Eventos" esquema="Eventos"/>
+              <Itens nameItem="Live" esquema="Live"/>
+              <Itens nameItem="Marft" esquema="Marft"/>
+              <Itens nameItem="Ppcp" esquema="Ppcp"/>
+              <Itens nameItem="Rh" esquema="Rh"/>
+              <Itens nameItem="Rh_sci" esquema="Rh_sci"/>
+              <Itens nameItem="Suprimentos" esquema="Suprimentos"/>
+              <Itens nameItem="Sustentabilidade" esquema="Sustentabilidade"/>
+              <Itens className="last:mb-24" nameItem="Ti" esquema="Ti"/>
             </ul>
           </div>
         </div>
