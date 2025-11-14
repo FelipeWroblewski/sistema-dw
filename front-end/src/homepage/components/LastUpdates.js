@@ -9,6 +9,22 @@ function LastUpdates() {
                     <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
                     <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
                 </li>
+                <li className="py-3 flex justify-between items-center">
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
+                </li>
+                <li className="py-3 flex justify-between items-center">
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
+                </li>
+                <li className="py-3 flex justify-between items-center">
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
+                </li>
+                <li className="py-3 flex justify-between items-center">
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Esquema: </strong>ti</span> 
+                    <span className="text-gray-500 text-sm dark:text-[#E3CFAA]"><strong className="dark:text-[#E3CFAA]">Tabela: </strong>dim_sistemas_glpi atualizada.</span>
+                </li>
                 {/* endfor */}
             </ul>
             {/* else */}
