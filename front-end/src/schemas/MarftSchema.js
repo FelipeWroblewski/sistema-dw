@@ -1,7 +1,11 @@
+import NavBar from '../navBar/NavBar';
+import HeaderSchema from './components/HeaderSchema';
+
 function MarftSchema() {
     return (
-        <div>
-            <h1>Marft</h1>
+        <div className='w-full min-h-screen overflow-x-hidden bg-[#1a1a1a]'>
+            <NavBar />
+            <HeaderSchema name_schema="Marft"/>
         </div>
     )
 }
