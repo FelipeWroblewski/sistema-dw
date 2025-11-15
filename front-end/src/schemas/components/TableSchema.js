@@ -1,4 +1,6 @@
-function TableSchema(Detalhes) {
+import { Link } from 'react-router-dom';
+
+function TableSchema() {
     return (
         <>
             <table className="min-w-full divide-y divide-gray-400 border-gray-400  dark:divide-[#E3CFAA] border dark:border-[#8A7864] rounded-lg">
@@ -16,39 +18,9 @@ function TableSchema(Detalhes) {
                         {/* {% for tabela in tabelas %} */}
                             <tr>
                                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                    <a href={Detalhes} >
+                                    <Link to={`/DetalhesTabela`}>
                                         fpedidos_compra
-                                    </a>
-                                </td>                                
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tabela para mostrar pedidos de compras</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PedidosCompra</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ERP</td>
-                            </tr>
-                            <tr>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                    <a href="{{ url_for('detailsTable.detalhesTabela', tabela_id=tabela.id) }}">
-                                        fpedidos_compra
-                                    </a>
-                                </td>                                
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tabela para mostrar pedidos de compras</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PedidosCompra</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ERP</td>
-                            </tr>
-                            <tr>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                    <a href="{{ url_for('detailsTable.detalhesTabela', tabela_id=tabela.id) }}">
-                                        fpedidos_compra
-                                    </a>
-                                </td>                                
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tabela para mostrar pedidos de compras</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PedidosCompra</td>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ERP</td>
-                            </tr>
-                            <tr>
-                                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                    <a href="{{ url_for('detailsTable.detalhesTabela', tabela_id=tabela.id) }}">
-                                        fpedidos_compra
-                                    </a>
+                                    </Link>
                                 </td>                                
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tabela para mostrar pedidos de compras</td>
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PedidosCompra</td>
