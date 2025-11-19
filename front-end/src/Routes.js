@@ -14,6 +14,7 @@ import SuppliesSchema from './schemas/SuppliesSchema';
 import SustainabilitySchema from './schemas/SustainabilitySchema';
 import TiSchema from './schemas/TiSchema';
 import DetailsPage from './detailsTable/DetailsPage'
+import CreateTable from './createTable/CreateTable'
 function App() {
   return (
     <Routes>
@@ -32,6 +33,7 @@ function App() {
       <Route path="/Sustentabilidade" element={<SustainabilitySchema />} />
       <Route path="/Ti" element={<TiSchema />} />
       <Route path="/DetalhesTabela" element={<DetailsPage />}/>
+      <Route path='CreateTable' element={<CreateTable />} />
     </Routes>
   );
 }
