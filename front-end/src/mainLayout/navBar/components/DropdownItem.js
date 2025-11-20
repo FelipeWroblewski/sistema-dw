@@ -10,15 +10,15 @@ function DropdownItem({ icon, name, id, isOpen, onToggle }) {
       <div className="flex items-center gap-2 flex-row">
         <FontAwesomeIcon
           icon={icon}
-          className="text-lg text-brancoPrincipal dark:text-[#22211D]"
+          className="text-lg text-mainWhite dark:text-mainBlack"
         />
-        <span className="text-lg text-brancoPrincipal dark:text-[#22211D] font-inter">
+        <span className="text-lg text-mainWhite dark:text-mainBlack font-inter">
           {name}
         </span>
       </div>
       <FontAwesomeIcon
         icon={faCaretRight}
-        className={`text-2xl text-brancoPrincipal dark:text-[#22211D] w-4 h-4 transition-transform duration-300 ease-in-out ${
+        className={`text-2xl text-mainWhite dark:text-mainBlack w-4 h-4 transition-transform duration-300 ease-in-out ${
           isOpen ? "rotate-90" : ""
         }`}
       />

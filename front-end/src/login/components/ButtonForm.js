@@ -1,7 +1,7 @@
 function ButtonForm() {
     return (
         <>
-            <button type="submit" className="w-full bg-begePrincipal cursor-pointer text-brancoPrincipal p-2 border-solid border-1 border-transparent rounded-md">
+            <button type="submit" className="w-full bg-mainBeige border border-mainBeige cursor-pointer text-mainWhite p-2 border-solid border-1 border-transparent rounded-md">
                 Entrar
             </button>
         </>

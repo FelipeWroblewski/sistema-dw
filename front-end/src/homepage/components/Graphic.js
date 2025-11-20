@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 
 import { ChartContainer } from '@mui/x-charts/ChartContainer';
@@ -45,7 +44,7 @@ const dataset = [
 
 const series = [
   { type: 'line', dataKey: 'min', color: '#8A7864' },
-  { type: 'bar', dataKey: 'precip', color: '#E3CFAA', yAxisId: 'rightAxis' },
+  { type: 'bar', dataKey: 'precip', color: '#b7a696', yAxisId: 'rightAxis' },
 ];
 
 export default function ReverseExample() {
@@ -54,8 +53,20 @@ export default function ReverseExample() {
 
   return (
 
-    <Box sx={{ width: '83%', margin: 'auto', backgroundColor: '#22211D', padding: 2, borderRadius: 2, boxShadow: 3, mt: 5, mb: 5 }}>
-      
+    <Box sx={{ 
+        display: 'none',
+        width: '83%', 
+        margin: 'auto', 
+        backgroundColor: '#ffffff', 
+        padding: 2, 
+        borderRadius: 2, 
+        boxShadow: 3, 
+        mt: 5, 
+        mb: 5,
+        '@media (min-width: 768px)': { 
+            display: 'block' 
+        } 
+        }}>      
       <Box sx={{ width: '100%' }}>
         <ThemeProvider theme={chartTheme}>
             <ChartContainer
@@ -66,12 +77,12 @@ export default function ReverseExample() {
                 dataKey: 'month',
                 label: 'Tabela',
                 reverse: false, 
-                labelStyle: { fill: '#8A7864' },
+                labelStyle: { fill: '#b7a696' },
                 },
             ]}
             yAxis={[
-                { id: 'leftAxis', reverse: false, width: 50, labelStyle: { fill: '#8A7864' } },
-                { id: 'rightAxis', reverse: false, position: 'right', width: 50, labelStyle: { fill: '#8A7864' } },
+                { id: 'leftAxis', reverse: false, width: 50, labelStyle: { fill: '#b7a696' } },
+                { id: 'rightAxis', reverse: false, position: 'right', width: 50, labelStyle: { fill: '#b7a696' } },
             ]}
             dataset={dataset}
             height={400}
@@ -80,9 +91,9 @@ export default function ReverseExample() {
             <BarPlot />
             <LinePlot />
             <MarkPlot />
-            <ChartsXAxis labelStyle={{ fill: "#E3CFAA" }} tickLabelStyle={{ fill: "#E3CFAA" }} axisLineStyle={{ stroke: "#E3CFAA" }} tickColor="#E3CFAA" />
-            <ChartsYAxis axisId="leftAxis" label="temperature (°C)" labelStyle={{ fill: "#E3CFAA" }} tickLabelStyle={{ fill: "#E3CFAA" }} axisLineStyle={{ stroke: "#E3CFAA" }} tickColor="#E3CFAA"  />
-            <ChartsYAxis axisId="rightAxis" label="precipitation (mm)" labelStyle={{ fill: "#E3CFAA" }} tickLabelStyle={{ fill: "#E3CFAA" }} axisLineStyle={{ stroke: "#E3CFAA" }} tickColor="#E3CFAA"/>
+            <ChartsXAxis labelStyle={{ fill: "#b7a696" }} tickLabelStyle={{ fill: "#b7a696" }} axisLineStyle={{ stroke: "#b7a696" }} tickColor="#b7a696" />
+            <ChartsYAxis axisId="leftAxis" label="temperature (°C)" labelStyle={{ fill: "#b7a696" }} tickLabelStyle={{ fill: "#b7a696" }} axisLineStyle={{ stroke: "#b7a696" }} tickColor="#b7a696"  />
+            <ChartsYAxis axisId="rightAxis" label="precipitation (mm)" labelStyle={{ fill: "#b7a696" }} tickLabelStyle={{ fill: "#b7a696" }} axisLineStyle={{ stroke: "#b7a696" }} tickColor="#b7a696"/>
             <ChartsTooltip />
             </ChartContainer>
         </ThemeProvider>

@@ -6,9 +6,9 @@ function BtnHome({onToggle}) {
     return (
         <div className="flex items-center gap-4 ml-10">
             <button onClick={onToggle}>
-                <FontAwesomeIcon 
+                <   FontAwesomeIcon 
                     icon={faBars}
-                    className="text-3xl cursor-pointer dark:text-[#22211D]"
+                    className="text-3xl cursor-pointer text-mainWhite dark:text-mainBlack"
                 />
             </button>
             <a href='/Homepage' className="decoration-0">

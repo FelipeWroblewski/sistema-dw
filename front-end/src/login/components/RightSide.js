@@ -34,7 +34,7 @@ function RightSide() {
         }
     });
     return (
-        <div className='w-screen md:w-3/5 min-h-screen grid place-items-start md:place-items-center justify-center bg-brancoCinza'>
+        <div className='w-screen md:w-3/5 min-h-screen grid place-items-start md:place-items-center justify-center bg-whiteGray'>
             <div className="w-80 relative mt-10 md:mt-0 md:mb-10 bottom-5">
                 <img src="/imgs/live-marrom.png" alt="Logo" className="w-60 mx-auto mt-32 mb-10 md:hidden"></img>
                 <form onSubmit={handleSubmit} className="mt-20 md:mt-0">

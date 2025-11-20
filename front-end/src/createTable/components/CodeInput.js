@@ -25,21 +25,28 @@ function CodeInput() {
       color: "#888",
       border: "none",
     },
+    ".cm-activeLineGutter": {
+    backgroundColor: "transparent !important",
+    color: "#888 !important",
+    },
   });
 
   const [value, setValue] = useState("");
 
   return (
     <CodeMirror
-      className="w-10/12 mx-auto mt-10 border-2 border-black dark:border-[#E3CFAA] bg-transparent"
-      value={value}
-      height="300px"
-      extensions={[
-        sql(),
-        customTheme,
-        lineNumbers(),
-      ]}
-      onChange={(val) => setValue(val)}
+        basicSetup={{
+            foldGutter: false,
+        }}
+        className="w-10/12 mx-auto mt-10 border-2 border-black dark:border-[#E3CFAA] bg-transparent"
+        value={value}
+        height="300px"
+        extensions={[
+            sql(),
+            customTheme,
+            lineNumbers(),
+        ]}
+        onChange={(val) => setValue(val)}
     />
   );
 }

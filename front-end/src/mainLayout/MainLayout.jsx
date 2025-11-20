@@ -7,7 +7,7 @@ export default function MainLayout() {
     <div>
       <NavBar />
 
-      <div style={{ padding: 20 }}>
+      <div>
         <Outlet />  
       </div>
 
