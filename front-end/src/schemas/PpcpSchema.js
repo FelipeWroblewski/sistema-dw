@@ -1,11 +1,9 @@
-import NavBar from '../navBar/NavBar';
 import HeaderSchema from './components/HeaderSchema';
 import TableSchema from './components/TableSchema';
 
 function PpcpSchema() {
     return (
         <div className="h-screen w-full bg-brancoCinza ">
-            <NavBar />
             <div className="p-8 font-sans bg-gray-50 dark:bg-[#1a1a1a] min-h-screen">
             <HeaderSchema name_schema="Ppcp"/>
 

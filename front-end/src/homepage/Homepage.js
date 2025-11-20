@@ -1,13 +1,10 @@
 import CardsHomepage from './components/CardsHomepage';
-import NavBar from '../navBar/NavBar';
 import LastUpdates from './components/LastUpdates';
 import Graphic from './components/Graphic';
-import HomeFooter from './components/HomeFooter';
 
 function Homepage() {
     return (
         <>
-            <NavBar />
             <div className='flex flex-col items-center w-full min-h-screen overflow-x-hidden bg-[#1a1a1a]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-32 gap-6 w-10/12'>
                     <CardsHomepage conteudo="18" descricao="Esquemas"/>
@@ -17,7 +14,6 @@ function Homepage() {
                 </div>
                 <Graphic />
                 <LastUpdates />
-                <HomeFooter />
             </div>
         </>
     );

@@ -1,11 +1,9 @@
-import NavBar from '../navBar/NavBar';
 import ColumnsTable from './components/ColumnsTable'
 import DetailsCard from './components/DetailsCard'
 
 function DetailsPage() {
     return (
         <div className='min-h-screen w-full bg-gray-100 dark:bg-[#1a1a1a]'>
-            <NavBar />
             <div class="w-4/5 mx-auto">
                 <h1 className='pt-32 text-start text-2xl text-black dark:text-[#E3CFAA]'>Nome da tabela: fpedidos_compra</h1>
             </div>
